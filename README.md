@@ -12,32 +12,7 @@ The architecture involves a linear layer with a ReLU activation for dimension re
 
 ![Our architecture](https://github.com/Ahmed5720/Visual-Question-Answering-Model-using-Pretrained-Model-Embeddings/blob/main/Model12.jpg)
 
-## Table of Contents
-- [Requirements](#requirements)
-- [Dataset](#dataset)
-- [Pipeline Description](#pipeline-description)
-  - [Dataloader](#dataloader)
-  - [Image Embeddings](#image-embeddings)
-  - [Sentence Embeddings](#sentence-embeddings)
-  - [Dimensionality Reduction](#dimensionality-reduction)
-  - [Embedding Concatenation](#embedding-concatenation)
-  - [Classifier](#classifier)
-- [Training](#training)
-- [Evaluation](#evaluation)
 
-## Requirements
-
-Install the following Python packages:
-- `torch`
-- `torchvision`
-- `Pillow`
-- `pandas`
-- `sentence-transformers`
-
-Install via pip:
-```bash
-pip install torch torchvision pillow pandas sentence-transformers
-```
 
 ## Dataset
 
@@ -127,18 +102,8 @@ train_model(train_loader, val_loader, classifier, criterion, optimizer)
 ```
 
 ## Evaluation
-The `evaluate_model` function computes accuracy on the test set and saves predictions to a CSV file (`test_predictions.csv`).
+The `evaluate_model` function computes accuracy on the test set and saves predictions to a CSV file (`test_predictions.csv`). 
 
 ```python
 evaluate_model(test_loader, classifier)
-```
-
-## File Structure
-```
-project/
-|├── images/              # Directory containing image files
-|├── new_data_train.csv   # Training dataset CSV
-|├── new_data_val.csv     # Validation dataset CSV
-|├── new_data_test.csv    # Test dataset CSV
-|└── main.py             # Main script
 ```
