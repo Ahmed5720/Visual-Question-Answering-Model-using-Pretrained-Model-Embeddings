@@ -21,11 +21,11 @@ This code uses the DAQUAR dataset, structured as CSV files containing:
 2. A column for corresponding answers.
 3. A column for image filenames.
 
-- Ensure all images are stored in the specified `image_dir` directory.
+-  images are stored in the `image_dir` directory.
 - CSV file paths:
-  - Training: `new_data_train.csv`
-  - Validation: `new_data_val.csv`
-  - Test: `new_data_test.csv`
+  - Training: `data_train.csv`
+  - Validation: `data_val.csv`
+  - Test: `data_test.csv`
 
 ## Pipeline Description
 
